@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Login Page</title>  
+    <link rel="stylesheet" type="text/css" href="style.css">  
+</head>  
+
+<body>  
+    <nav>  
+    <ul>  
+        <li><a href="login.html">Home</a></li>  
+        <li><a href="shopping.html">Products</a></li>  
+        <li><a href="#">About</a></li>  
+        <li><a href="#">Contact</a></li>  
+    </ul>  
+    </nav>  
+
+    <div class="login-container">  
+        <h2>Login</h2>  
+        <form id="loginForm" onsubmit="handleFormSubmit(event)">  
+            <label for="username">Username:</label>  
+            <input type="text" id="username" name="username" required>  
+              
+            <label for="password">Password:</label>  
+            <input type="password" id="password" name="password" required>  
+              
+            <button type="submit">Login</button>  
+        </form>  
+    </div>  
+  
+    <script>  
+        function handleFormSubmit(event) {  
+            event.preventDefault(); 
+            window.location.href = 'shopping.html';  
+        }  
+    </script>
+    
+    <footer>  
+        <p>&copy; 2024 Leno, Lin Dongcai</p>  
+    </footer>  
+
+</body>  
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Simple shopping page</title>    
+    <link rel="stylesheet" type="text/css" href="style.css">    
+</head>    
+<body>    
+  
+<!-- navigation bar -->  
+<nav>  
+    <ul>  
+        <li><a href="login.html">Home</a></li>  
+        <li><a href="shopping.html">Products</a></li>  
+        <li><a href="#">About</a></li>  
+        <li><a href="#">Contact</a></li>  
+    </ul>  
+</nav>  
+  
+<h1>Simple shopping page</h1>  
+  
+<!-- picture -->  
+<img src="C1.jpg" alt="Product Image" id="product-image">  
+  
+<form id="shoppingForm">    
+    <!-- Quantity section -->  
+    <div>    
+        <label for="quantity">Number:</label>    
+        <input type="number" id="quantity" min="1" value="1">    
+    </div>    
+    <!-- Product selection section -->  
+    <div>    
+        <label for="product">Select a product:</label>    
+        <select id="product">    
+            <option value="100">productA - $100</option>    
+            <option value="200">productB - $200</option>    
+            <option value="300">productC - $300</option>    
+        </select>    
+    </div>    
+    <button type="button" onclick="checkout()">Check out</button>    
+</form>    
+  
+  <div id="orderSummary">Order summary will appear here after checkout</div>  
+  
+<!-- footer -->  
+  <footer>  
+      <p>&copy; 2024 Leno, Lin Dongcai</p>  
+  </footer>  
+  
+<script src="script.js"></script>    
+  
+</body>    
+</html>
